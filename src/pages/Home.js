@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
 import {Link } from 'react-router-dom';
+import Button from "../components/StyledHero";
  const Home = () => {
     return (
         <>
@@ -16,6 +17,7 @@ import {Link } from 'react-router-dom';
         </Hero>
         <Services/>
         <FeaturedRooms/>
+        <Button>Hello</Button>
         </>
        
 

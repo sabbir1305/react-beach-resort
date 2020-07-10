@@ -5,7 +5,7 @@ import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import {RoomContext} from '../context';
 
-
+import StyledHero from "../components/StyledHero";
 
 export default class SingleRoom extends Component {
 constructor(props){
@@ -39,13 +39,13 @@ static contextType = RoomContext;
 
         const {name,description,capacity,size,price,extras,breakfast,pets,images}=room;
         return (
-            <Hero hero="roomsHero">
+            <StyledHero image={images[0]}>
                 <Banner title={`${name} room`}>
                     <Link to='/rooms' className="btn-primary">
                         back to rooms
                     </Link>
                 </Banner>
-            </Hero>
+            </StyledHero>
         )
     }
 }
