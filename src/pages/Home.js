@@ -17,7 +17,7 @@ import Button from "../components/StyledHero";
         </Hero>
         <Services/>
         <FeaturedRooms/>
-        <Button>Hello</Button>
+      
         </>
        
 
